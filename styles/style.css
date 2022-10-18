@@ -1,0 +1,192 @@
+body {
+	background-color: lightblue;
+	font-family: Helvetica;
+	text-align: center;
+}
+ul{
+	display: inline-block;
+	text-align: left;
+}
+h2 {
+	text-shadow: 2px 2px black;
+}
+span.date{
+	font-style: italic;
+}
+span.where {
+	font-weight: bold;
+	text-decoration:underline;
+}
+#work{
+	list-style-type:square;
+}
+p.links{
+	font-size: 12px;
+}
+/* for styling <a anchors in menu */
+a.a-menu
+{
+	display: block;
+	text-decoration: none;
+	font-family: Veradna;
+	font-size: 20px;
+	/* font-style: bold; */
+	text-shadow: 2px 0px black;
+}	
+
+a.a-menu:hover
+{
+	color: red;
+}
+a.a-menu:active
+{
+	color: blue;
+}
+a.a-menu:visited;
+{
+	color: green;
+}
+/* flex part start here */
+
+/* top container with personal info and menu */
+#top_container
+{
+		display: flex;
+		justify-content: space-between;
+		padding:10px;
+}
+
+/* div with menu */
+#menu 
+{
+	flex-basis: 10%;
+	text-align: center;
+
+}
+
+.container 
+{
+	display: flex;
+	justify-content:space-around;
+	padding: 20px;
+}
+#container_edu
+{
+	/*flex: 200px;/**/
+	order: 2;
+	align-self: stretch;
+}
+#container_skills
+{
+	/*flex: 2;/**/
+	order: 1;
+	align-self: center;	
+	flex-basis: 20%;
+}
+#container_exp
+{
+	/*flex: 4;/**/
+	order: 3;
+}
+
+.box
+{
+	align-self: flex-start;
+	border: 2px solid black;
+	flex-basis: 37%;
+	background-color: lightblue;
+}
+.info
+{
+	box-shadow: 5px 5px #79a6d2;
+	background-color:  #9fbfdf;
+}
+#profile
+{
+	padding: 20px;
+}
+
+#nba
+{
+	background-image: url("https://getwallpapers.com/wallpaper/full/f/0/5/505546.jpg");
+
+}
+.hobby
+{
+	flex-basis: 85%;
+	display: flex;
+	justify-content: space-around;
+	padding: 40px;
+}	
+
+/* media query */
+@media (max-width: 700px) {
+	body 
+	{
+		background-color: blue;
+		color: lightblue;
+		font-family: Times;
+	}
+	.container 
+	{
+		flex-direction: column;	
+		
+	}
+	#container_skills 
+	{
+		align-self: stretch;
+	}
+	.box
+	{
+		background-color: teal;
+	}
+	#profile
+	{
+		background-color: teal;
+	}
+	.hobby
+	{
+		flex-direction: column;
+	}
+	.small-pic
+	{
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.small-pic
+{
+	width: 30%;
+	height: 100%;
+}
+.hobby
+{
+	justify-content: space-between;
+}
+
+.hobby-text
+{
+	flex-basis: 40%;
+	align-self: center;
+	text-align: left;
+	padding: 30px;
+	background-color:  #ffd699;
+	opacity: 0.8;
+}
+a.a-nba:link
+{
+	color:black;
+}	
+a.a-nba:visited
+{
+	color:black;	
+}
+a.a-nba:hover
+{
+	color: red;
+}	
+a.a-nba: active
+{
+	color: black;
+}
