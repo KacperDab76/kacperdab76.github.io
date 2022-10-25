@@ -130,6 +130,7 @@ a.a-menu:visited;
 	.container 
 	{
 		flex-direction: column;	
+		justify-content: center;
 		
 	}
 	#container_skills 
@@ -147,12 +148,14 @@ a.a-menu:visited;
 	.hobby
 	{
 		flex-direction: column;
+		justify-content: center;
 	}
-	/* .small-pic */
-	/* { */
+	.small-pic
+	{
 		/* width: 100%; */
 		/* height: 100%; */
-	/* } */
+		padding: 20px;
+	}
 }
 
 .small-pic
