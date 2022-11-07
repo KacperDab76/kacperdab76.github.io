@@ -1,106 +1,204 @@
 <!DOCTYPE html>
-
-<html>
-	<head>
-		<title> My CV </title>
-        <link rel="stylesheet" href="styles/style.css">
-	</head>
-	<body>
-		<div id="top_container">
-			<div id="info" class="box">
-				<h1>Kacper Dabrowski</h1>
-				<h3>kacper76dab@gmail.com</h3>
-				<h3>(087) 9322737</h3>
-				<h3><a href="https://www.linkedin.com/in/kacper-m-dabrowski/" id="linkedin-link">Linkedin</a></h3>
-			</div>	
-			<div id="menu" class="box">
-				<a href="index.html" class="a-menu"> Home </a>
-				<a href="profile/index.html" class="a-menu"> Profile </a>
-				<a href="hobby/index.html"class="a-menu"> Interests and Hobbys </a>					
-			</div>
-		</div>
-		<div id="container" class="container">
-			<div id="container_edu" class="box info">
-				<h2 id="education">Education</h2>
-					<p class="links">
-						[
-						<a href="#experience">Experience</a>
-						<a href="#skills">Skills</a>
-						]
-					</p>
-					<p>
-						<span class="date">May 2022 – August 2022</span><br>
-						<span class="where">National College of Ireland, Dublin | ncirl.ie </span><br>
-						<span class="what">
-							Higher Diploma in Science in Computing (HDCOMP) <br>
-							Certificate in Computing <br>
-							Modules: Software Development (Java), Introduction to Databases, Statistics <br>
-						</span><br>
-						<span class="date">Oct 1996 – June 2000</span><br>
-						<span class="where">Warsaw University of Technology Information Technology and Electronics </span><br>
-						<span class="what">
-							Modules including Structural programming, C Programming, Object-oriented programming (C++), Algorithms and data structures,<br>
-							Computer Architecture, Networking Architecture, Computer Networks, Operating Systems, Local Area Networks,<br>
-							Assembler programming of microprocessors<br>
-						</span><br>
-						<span class="date">Jun 1991:</span><br>
-						<span class="where">Klementyna Hoffmanowa Secondary School in Warsaw </span><br>
-						<span class="what">
-								Leaving Certificate
-						</span><br>	
-						<span class="date"></span><br>
-						<span class="where"> </span><br>
-						<span class="what">
-							
-						</span><br>		
-					</p>
-			</div>
-			<div id="container_skills" class="box info">
-				<h2 id="skills">Skills</h2>
-					<p class="links">
-						[
-						<a href="#experience">Experience</a>
-						<a href="#education">Education</a>
-						]
-					</p>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>CV </title>
+        <!-- bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+                <link href="styles/styles.css" rel="stylesheet" type="text/css" />
+        </head>
+<body>
+        <div class="container">
+                <div class="row">
+                        <div class="col">
+                                <h1>Kacper Dabrowski</h1>
+                        </div>
+                </div>
+                <div class="row">
+                        <div class="col">
+                                <!-- navbar from bootstrap -->
+                                <nav class="navbar navbar-expand-lg bg-warning">
+                                        <div class="container-fluid">
+                                          <a class="navbar-brand" href="../index.html" >Curriculum Vitae</a>
+                                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                                            <span class="navbar-toggler-icon"></span>
+                                          </button>
+                                          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                                             <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
+                                              <li class="nav-item">
+                                                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                                              </li>
+                                             
+                                              <li class="nav-item dropdown">
+                                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                  Info
+                                                </a>
+                                                <ul class="dropdown-menu bg-warning">
+                                                  <li><a class="dropdown-item" href="mailto:kacper76dab@gmail.com">kacper76dab@gmail.com</a></li>
+                                                  <li><a class="dropdown-item" href="mailto:x21237298@student.ncirl.ie">x21237298@student.ncirl.ie</a></li>
+                                                  <li><a class="dropdown-item" href="#">(087) 9322737</a></li>
+                                                  <li><hr class="dropdown-divider"></li>
+                                                  <li><a class="dropdown-item" href="https://www.linkedin.com/in/kacper-m-dabrowski/" target="_blank">Linkedin</a></li>
+                                                </ul>
+                                              </li>
+                                               <li class="nav-item">
+                                                <a class="nav-link" href="profile/index.html">Profile </a>
+                                              </li>
+                                              <li class="nav-item">
+                                                <a class="nav-link" href="hobby/index.html">Hobby </a>
+                                              </li>
+                                            </ul>
+                                           
+                                          </div>
+                                        </div>
+                                </nav>
+                
+                        </div>
+                </div>
+		<!-- row with skill,education,experience info  -->
+		<div class="row p-2 flex-column flex-md-row justify-content-center">
+			<div class="col-12 col-md-8 col-lg-2 bg-warning bg-opacity-10 border border-warning shadow-lg ">
+				<div id="container_skills" class="box info ">
+					<h2 id="skills" class="text-center">Skills</h2>
 					<ul>
 							<li> C </li>
 							<li> C++ </li>
 							<li> Java</li>
 							<li> Python </li>
 							<li> Swift </li>
-							<li> Microsoft Office : Excel with scripting </li>
+							<li> Microsoft Office: Excel with scripting </li>
 							
 					</ul>
+				</div> <!-- end of #container_skills div-->
 			</div>
-			<div id="container_exp" class="box info">
-				<h2 id="experience">Experience</h2>
-					<p class="links">
-						[
-						<a href="#education">Education</a>
-						<a href="#skills">Skills</a>
-						]
-					</p>
-					<span class="date">09.2008- present:</span><br>
-					<span class="where">Bus Éireann, Cork  </span><br>
-					<span class="what">
-							Engineer Operative<br>
-							Important step in learning English after moving to Ireland. <br>
-							Learned how to work in foreign language environment. <br>
-					</span><br>
-					<span class="date">06.2005-08.2008:</span><br>
-					<span class="where"> ISS Ireland, Cork</span><br>
-					<span class="what">
-							Cleaner <br>
-					</span><br>	
-					<span class="date">12.2003-08.2004:</span><br>
-					<span class="where">Postdata S.A., Nowy Targ, Poland</span><br>
-					<span class="what">
-							Working for Poczta Polska, as IT positions were moved to Postdata S.A. and outsourced. <br>
-					</span><br>	
-					<span class="date">05.2002-11.2003:</span><br>
-					<span class="where">Poczta Polska, Nowy Targ, Poland </span><br>
-					<span class="what">
+			<div class="col-12 col-md-8 col-lg-5 bg-warning bg-opacity-10 border border-warning shadow-lg">
+				<h2 id="education" class="text-center">Education</h2>
+				<!-- Accordion from bootstrap  -->
+				<div class="accordion" id="accordionEducation">
+					<div class="accordion-item bg-warning bg-opacity-10">
+					  <h2 class="accordion-header" id="headingOne">
+					    <button class="accordion-button bg-warning bg-opacity-10 flex-column collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						<em>May 2022 – August 2022 ></em><br>
+						<strong>National College of Ireland, Dublin | ncirl.ie</strong> 
+					    </button>
+					  </h2>
+					  <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionEducation">
+					    <div class="accordion-body">
+						<strong>Higher Diploma in Science in Computing (HDCOMP)</strong>
+						<em>Certificate in Computing </em><br><br>
+						Modules:
+						<ul>
+							<li>Software Development (Java)</li>
+							<li>Introduction to Databases</li>
+							<li>Statistics</li>
+						</ul>
+					     </div>
+					  </div>
+					</div>
+					<div class="accordion-item bg-warning bg-opacity-10">
+					  <h2 class="accordion-header" id="headingTwo">
+					    <button class="accordion-button bg-warning bg-opacity-10 flex-column collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+						<em>Oct 1996 – June 2000</em><br>
+						<strong>Warsaw University of Technology Information Technology and Electronics </strong> 
+					    </button>
+					  </h2>
+					  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionEducation">
+					    <div class="accordion-body">
+						Modules including 
+						<ul>
+							<li>Structural programming</li>
+							<li>C Programming</li>
+							<li>Object-oriented programming (C++)</li>
+							<li>Algorithms and data structures</li>
+							<li>Computer Architecture</li>
+							<li>Networking Architecture</li>
+							<li>Computer Networks</li>
+							<li>Operating Systems</li>
+							<li>Local Area Networks</li>
+							<li>Assembler programming of microprocessors</li>
+						</ul>
+						
+						
+					    </div>
+					  </div>
+					</div>
+					<div class="accordion-item bg-warning bg-opacity-10">
+					  <h2 class="accordion-header" id="headingThree">
+					    <button class="accordion-button bg-warning bg-opacity-10 collapsed flex-column" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+						<em>Jun 1991:</em><br>
+						<strong>Klementyna Hoffmanowa Secondary School in Warsaw </strong>
+					    </button>
+					  </h2>
+					  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionEducation">
+					    <div class="accordion-body">
+					      <strong>Leaving Certificate</strong> 
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-md-8 col-lg-5 bg-warning bg-opacity-10  border border-warning shadow-lg">
+				<h2 id="experience"  class="text-center">Experience</h2>
+				<!-- Accordion from bootstrap  -->
+				<div class="accordion" id="accordionExperience">
+					<div class="accordion-item bg-warning bg-opacity-10">
+					  <h2 class="accordion-header" id="headingOne-exp">
+						<!-- First Item of experience -->
+					    <button class="accordion-button bg-warning bg-opacity-10 flex-column collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne-exp" aria-expanded="true" aria-controls="collapseOne-exp">
+						<em>09.2008- present:</em><br>
+						<strong>Bus Éireann, Cork  </strong>
+					    </button>
+					  </h2>
+					  <div id="collapseOne-exp" class="accordion-collapse collapse" aria-labelledby="headingOne-exp" data-bs-parent="#accordionExperience">
+					    <div class="accordion-body">
+						Engineer Operative<br>
+						Important step in learning English after moving to Ireland. <br>
+						Learned how to work in foreign language environment. <br>
+						</ul>
+					     </div>
+					  </div>
+					</div>
+					<div class="accordion-item bg-warning bg-opacity-10">
+					  <h2 class="accordion-header" id="headingTwo-exp">
+						<!-- Second Item experience  -->
+					    <button class="accordion-button bg-warning bg-opacity-10 flex-column collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo-exp" aria-expanded="false" aria-controls="collapseTwo-exp">
+						<em>06.2005-08.2008</em><br>
+						<strong>ISS Ireland, Cork </strong> 
+					    </button>
+					  </h2>
+					  <div id="collapseTwo-exp" class="accordion-collapse collapse" aria-labelledby="headingTwo-exp" data-bs-parent="#accordionExperience">
+					    <div class="accordion-body">
+						Cleaner <br>
+						Important step in learning English after moving to Ireland. <br>
+						Learned how to work in foreign language environment. <br>
+					    </div>
+					  </div>
+					</div>
+					<div class="accordion-item bg-warning bg-opacity-10">
+					  <h2 class="accordion-header" id="headingThree-exp">
+						<!-- third item experience  -->
+					    <button class="accordion-button bg-warning bg-opacity-10 collapsed flex-column" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree-exp" aria-expanded="false" aria-controls="collapseThree-exp">
+						<em>12.2003-08.2004</em><br>
+						<strong>Postdata S.A., Nowy Targ, Poland</strong>
+					    </button>
+					  </h2>
+					  <div id="collapseThree-exp" class="accordion-collapse collapse" aria-labelledby="headingThree-exp" data-bs-parent="#accordionExample">
+					    <div class="accordion-body">
+					      Working for Poczta Polska, as IT positions were moved to Postdata S.A. and outsourced. <br>
+					      
+					    </div>
+					  </div>
+					</div>
+					<div class="accordion-item bg-warning bg-opacity-10">
+						<h2 class="accordion-header" id="headingFour-exp">
+							<!-- fourth item experience  -->
+						  <button class="accordion-button bg-warning bg-opacity-10 collapsed flex-column" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour-exp" aria-expanded="false" aria-controls="collapseFour-exp">
+						      <em>05.2002-11.2003</em><br>
+						      <strong>Poczta Polska, Nowy Targ, Zakopane Poland </strong>
+						  </button>
+						</h2>
+						<div id="collapseFour-exp" class="accordion-collapse collapse" aria-labelledby="headingFour-exp" data-bs-parent="#accordionExample">
+						  <div class="accordion-body">
 							IT Technician<br>
 							<ul id="work">
 								<li>Introducing computers and networks to 57 local branches of Post Office</li>
@@ -110,16 +208,19 @@
 								<li>Experience with PC hardware maintenance and PC software installations (Operating Systems, Microsoft Office) </li>
 								<li>Developing programs to automate everyday tasks using Python </li>
 							</ul>
-					</span><br>	
-					
+						  </div>
+						</div>
+					      </div>
+				</div>			
 			</div>
-		</div>
-		<p class="links">
-			[
-			<a href="#education">Education</a>
-			<a href="#skills">Skills</a>
-			]
-		</p>
-	</body>
 
+		</div>
+
+
+        </div>
+	<!-- end of container -->
+	
+        <!-- script for bootstrap -->	
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
 </html>

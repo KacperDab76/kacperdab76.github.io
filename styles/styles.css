@@ -1,0 +1,17 @@
+body 
+{
+        font-family:'Lucida Sans', Verdana, sans-serif;
+}
+a.navbar-brand
+{
+        font-size: 20px;
+        font-family: 'Lucida Handwriting',cursive;
+        color: grey;
+}
+
+/* size of pic in hobby  */
+.small-pic
+{
+        width: 300px;
+        height: 200px;
+}
